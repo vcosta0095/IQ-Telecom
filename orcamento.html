@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./img/logosec.png" type="image/x-icon">
+  <link rel="preload" href="./css/style.css" as="style">
+  <link rel="stylesheet" href="./css/style.css">
+
+  <title>IQ Telecom - Orçamento</title>
+  <meta name="description" content="IQ Telecom, oferecendo soluções de internet empresarial e residencial.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Croissant+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+</head>
+
+<body id="orcamento">
+  <header class=" cabecalho">
+    <div class="cabecalho-bgk  container">
+      <a href="./index.html"><img src="./img/logo.png" alt="Logo IQ Telecom" class="logo-principal"></a>
+      <nav id="navegacao">
+        <button id="btn-mobile" aria-label="Abrir Menu" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+          <span id="hamburger"></span>
+        </button>
+        <ul id="menu" role="menu">
+          <li><a href="./sobre.html" class="font-nav cor-0">Sobre</a></li>
+          <li><a href="suporte.html" class="font-nav cor-0">Suporte</a></li>
+          <li><a href="./planos.html" class="font-nav cor-0">Planos</a></li>
+          <li><a href="./orcamento.html" class="font-nav cor-0">Assine</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="orcamento-cabecalho-bgk ">
+    <div class="orcamento-cabecalho container ">
+      <h1 class="font-title cor-0 container">Orçamento</h1>
+    </div>
+
+    <form action="./" class="orcamento container">
+      <div class="orcamento-produto">
+        <h2 class="cor-0 font-title-suporte-perguntas orcamento-produto-titulo">Qual o ambiente?</h2>
+
+        <input type="radio" name="tipo" value="residencial" id="residencial">
+        <label for="residencial">Residencial</label>
+
+        <input type="radio" name="tipo" value="empresarial" id="empresarial">
+        <label for="empresarial">Empresarial</label>
+
+        <div class="orcamento-conteudo" id="orcamento-residencial">
+          <h2 class="cor-a9 font-title-suporte-perguntas ">Escolha o plano: </h2>
+
+          <input type="radio" name="plano" value="100" id="100mb">
+          <label for="100mb">Fibra Óptica 100MB <span>R$ 39</span></label>
+
+          <input type="radio" name="plano" value="200mb" id="200mb">
+          <label for="200mb">Fibra Óptica 200MB <span>R$ 49</span></label>
+
+          <input type="radio" name="plano" value="300mb" id="300mb">
+          <label for="300mb">Fibra Óptica 300MB <span>R$ 59</span></label>
+
+        </div>
+
+        <div class="orcamento-conteudo" id="orcamento-empresarial">
+          <h2 class="cor-a9 font-title-suporte-perguntas ">Escolha o plano: </h2>
+
+          <input type="radio" name="plano" value="400mb" id="400mb">
+          <label for="400mb">Fibra Óptica 400MB <span>R$ 69</span></label>
+
+          <input type="radio" name="plano" value="600mb" id="600mb">
+          <label for="600mb">Fibra Óptica 600MB <span>R$ 89</span></label>
+
+          <input type="radio" name="plano" value="800mb" id="800mb">
+          <label for="800mb">Fibra Óptica 800MB <span>R$ 169</span></label>
+
+        </div>
+      </div>
+
+      <div class="orcamento-dados form">
+        <h3 class="font-title-suporte-form-contato cor-0 col-2">Dados Pessoais</h3>
+        <div>
+          <label for="nome">Nome</label>
+          <input type="text" id="none" name="nome" required>
+        </div>
+
+        <div>
+          <label for="sobrenome">Sobrenome</label>
+          <input type="text" id="sobrenone" name="sobrenome" required>
+        </div>
+
+        <div>
+          <label for="cpf">CPF</label>
+          <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00" required>
+        </div>
+        <div>
+          <label for="telefone">Telefone</label>
+          <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000 0000">
+        </div>
+
+        <div>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="exemplo@mail.com" required>
+        </div>
+
+        <h3 class="font-title-suporte-form-contato cor-0 col-2">Localização</h3>
+        <div>
+          <label for="cep">CEP</label>
+          <input type="text" id="cep" name="cep" placeholder="0000-000">
+        </div>
+
+        <div>
+          <label for="numero">Numero</label>
+          <input type="text" id="numero" name="numero">
+        </div>
+
+        <div>
+          <label for="logradouro">Logradouro</label>
+          <input type="text" id="logradouro" name="logradouro" placeholder="Rua, avenida..." required>
+        </div>
+
+        <div>
+          <label for="bairro">Bairro</label>
+          <input type="text" id="bairro" name="bairro" required>
+        </div>
+
+        <div class="col-2">
+          <label for="estado">Estado:</label>
+          <select name="estado" id="estado">
+            <option value="bahia">Bahia</option>
+            <option value="ceara">Ceará</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="cidade">Cidade</label>
+          <input type="text" id="cidade" name="cidade" required>
+        </div>
+
+        <div class="col-2 suporte-checkbox">
+          <input type="checkbox" id="termos" name="termos">
+          <label for="termos">Li e aceito os <a href="./termos.html" class="cor-l2">termos e condições</a></label>
+        </div>
+        <div class="col-2">
+          <button class="botao font-botao ">Enviar</button>
+        </div>
+      </div>
+    </form>
+
+    <section class="footer-bgk">
+      <div class="footer container">
+
+        <div class="footer-contato">
+          <h2 class="font-title-footer cor-0">Contato</h2>
+          <ul class="lista-footer-contato">
+            <li><a href="tel:+55719999-9999" class=".font-text-footer cor-0 footer-dec-1">71 9999-9999 (Salvador)</a></li>
+            <li><a href="mailto:sal@iqtelecom.com" class=".font-text-footer cor-0 footer-dec-linha footer-dec-2">sal@iqtelecom.com</a></li>
+            <li><a href="tel:+55719999-9999" class=".font-text-footer cor-0 footer-dec-3">85 9999-9999 (Fortaleza)</a></li>
+            <li><a href="mailto:sal@iqtelecom.com" class=".font-text-footer cor-0 footer-dec-linha footer-dec-4">for@iqtelecom.com</a></li>
+          </ul>
+
+          <ul class="lista-footer-endereco">
+            <li class="font-text-footer cor-0 footer-end-dec1"> Rua Pernambuco, 88 - Pituba - Salvador - BA</li>
+            <li class="font-text-footer cor-0 footer-end-dec2 footer-dec-linha"> Av. Palestina, 63 - Passaré - Fortaleza - CE</li>
+          </ul>
+
+          <ul class="lista-footer-redes">
+            <li><a href=""><img src="./img/instagram.svg" alt="instagram"></a></li>
+            <li><a href=""><img src="./img/facebook.svg" alt="facebook"></a></li>
+            <li><a href=""><img src="./img/youtube.svg" alt="youtube"></a></li>
+          </ul>
+        </div>
+        <div class="footer-info">
+
+          <h2 class="font-title-footer cor-0">Informações</h2>
+          <ul class="lista-footer-info">
+            <li><a href="./sobre.html" class="font-text-footer cor-0">Sobre</a></li>
+            <li> <a href="" class="font-text-footer cor-0">Planos</a></li>
+            <li> <a href="" class="font-text-footer cor-0">Suporte</a></li>
+            <li><a href="./orcamento.html" class="font-nav cor-0">Assine</a></li>
+            <li><a href="./termos.html" class="font-text-footer cor-0">Termos e Condições</a></li>
+          </ul>
+          <div class="footer-logo">
+            <img src="./img/logosec.png" alt="">
+            <p class="cor-5 font-text-footer">IQ Telecom © Alguns direitos reservados.</p>
+          </div>
+        </div>
+      </div>
+  </div>
+  </section>
+
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
