@@ -1,0 +1,39 @@
+.suporte-cabecalho-bgk {
+  background: linear-gradient(var(--cor-a3) 400px, var(--cor-1) 0px);
+}
+
+.suporte-cabecalho-bgk h1 {
+  padding-top: 60px;
+  padding-bottom: 28px;
+}
+
+.suporte-cabecalho-bgk h1::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: var(--cor-l1);
+  transition: 0.6s;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.suporte-cabecalho-bgk h1:hover::before {
+  width: 40px;
+  background-color: var(--cor-a7);
+}
+
+.suporte-cabecalho p {
+  padding-left: 20px;
+  padding-bottom: 80px;
+}
+
+@media (max-width: 400px) {
+  .suporte-cabecalho-bgk h1 {
+    font-size: 1.5rem;
+    padding-top: 28px;
+    padding-bottom: 28px;
+  }
+  .suporte-cabecalho p {
+    padding-bottom: 40px;
+  }
+}

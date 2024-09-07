@@ -1,0 +1,42 @@
+/* Personalização */
+@import "./personalizacao/cores.css";
+@import "./personalizacao/global.css";
+@import "./personalizacao/tipografia.css";
+@import "./personalizacao/componentes.css";
+
+/* Estrutura básica do site */
+@import "./estrutura/header.css";
+@import "./estrutura/footer.css";
+
+/* Home */
+@import "./home/introducao.css";
+@import "./home/info-home.css";
+@import "./home/servicos-home.css";
+@import "./home/depoimento.css";
+
+/* Termos e Condições */
+
+@import "./termos/termos.css";
+
+/* Sobre */
+@import "./sobre/sobre-introducao.css";
+@import "./sobre/sobre-diversidade.css";
+@import "./sobre/sobre-parceiros.css";
+@import "./sobre/sobre-feedback.css";
+@import "./sobre/sobre-locais.css";
+
+/* Planos */
+@import "./planos/planos-introducao.css";
+@import "./planos/planos.css";
+
+/* Suporte */
+
+@import "./suporte/suporte-cabecalho.css";
+@import "./suporte/suporte-info.css";
+@import "./suporte/suporte-perguntas.css";
+@import "./suporte/suporte-formulario.css";
+
+/* Orçamento */
+@import "./orcamento/orcamento.css";
+
+@import "./personalizacao/animacao.css";

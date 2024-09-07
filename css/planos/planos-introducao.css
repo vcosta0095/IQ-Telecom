@@ -1,0 +1,40 @@
+.planos-introducao {
+  padding: 60px 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.sobre-planos-texto h1 {
+  padding-bottom: 10px;
+}
+
+@media (max-width: 800px) {
+  .planos-introducao {
+    padding: 60px 100px;
+  }
+}
+
+@media (max-width: 600px) {
+  .planos-introducao {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .sobre-planos-texto {
+    text-align: center;
+  }
+
+  .planos-introducao-img {
+    grid-row: 1;
+  }
+}
+
+@media (max-width: 400px) {
+  .sobre-planos-texto h1 {
+    font-size: 1rem;
+  }
+
+  .sobre-planos-texto p {
+    font-size: 0.875rem;
+  }
+}

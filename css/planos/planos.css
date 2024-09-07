@@ -1,0 +1,238 @@
+.planos-bgk {
+  background: var(--cor-a4);
+  box-shadow: inset 0 120px var(--cor-0);
+  padding-bottom: 80px;
+}
+
+.planos-empresarial {
+  margin-top: 80px;
+}
+
+.planos-bgk h2 {
+  padding-top: 60px;
+  padding-bottom: 80px;
+  text-align: right;
+}
+
+.planos-bgk h2::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: var(--cor-l1);
+  transition: 0.6s;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.planos-bgk h2:hover::before {
+  width: 40px;
+  background-color: var(--cor-a7);
+}
+
+.planos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  justify-content: center;
+}
+
+.planos-bgk {
+  background: var(--cor-a4);
+  box-shadow: inset 0 120px var(--cor-0);
+  padding-bottom: 80px;
+}
+
+.planos-bgk h2 {
+  padding-top: 60px;
+  padding-bottom: 80px;
+  text-align: center;
+}
+
+.planos-bgk h2::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: var(--cor-l1);
+  transition: 0.6s;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.planos-bgk h2:hover::before {
+  width: 40px;
+  background-color: var(--cor-a7);
+}
+
+.cartao-planos {
+  background: var(--cor-a6);
+  padding: 40px 20px;
+  border-radius: 20px;
+  position: relative;
+}
+
+.cartao-planos h3,
+.cartao-planos p {
+  text-align: center;
+  padding-bottom: 8px;
+}
+
+.cartao-planos p::after {
+  content: "";
+  height: 2px;
+  width: 100%;
+  background: var(--cor-8);
+  border-radius: 2px;
+  display: block;
+  margin-top: 8px;
+  box-sizing: border-box;
+}
+
+.cartao-planos-lista {
+  padding: 16px;
+}
+
+.cartao-planos-lista li {
+  padding-bottom: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.cartao-planos-lista li::before {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 16px;
+  background: url(../../img/decoracao.svg);
+  margin-right: 8px;
+}
+
+.btn-planos {
+  background: var(--cor-0);
+  padding: 4px 12px;
+  border-radius: 40px;
+  position: absolute;
+  left: 80px;
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.btn-planos::after {
+  content: "";
+  background: url(../../img/seta-direita-branca.svg) no-repeat var(--cor-a4);
+  background-position: center;
+  border-radius: 50%;
+  margin-left: 55px;
+  padding: 18px;
+  width: 26px;
+  height: 18px;
+  display: block;
+  transition: 0.4s ease;
+}
+
+.btn-planos:hover {
+  background-color: var(--cor-l1);
+  color: var(--cor-0);
+  transition: 0.2s ease;
+}
+
+.btn-planos:hover::after {
+  transform: translate(8px);
+}
+
+@media (max-width: 1000px) {
+  .btn-planos {
+    left: 60px;
+  }
+  .btn-planos::after {
+    margin-left: 40px;
+    background: url(../../img/seta-laranja-btn-mobile.svg) no-repeat;
+    background-position: center;
+    width: 30px;
+    height: 18px;
+  }
+}
+
+@media (max-width: 800px) {
+  .btn-planos {
+    left: 50px;
+  }
+  .btn-planos::after {
+    margin-left: 10px;
+    background: url(../../img/seta-laranja-btn-mobile.svg) no-repeat;
+    background-position: center;
+    width: 30px;
+    height: 18px;
+  }
+}
+
+@media (max-width: 600px) {
+  .planos {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .cartao-planos {
+    margin-bottom: 40px;
+    width: 400px;
+  }
+  .btn-planos {
+    margin-top: 10px;
+    left: 160px;
+    padding: 12px;
+    width: 80px;
+  }
+
+  .btn-planos::after {
+    display: none;
+  }
+  .planos-bgk h2 {
+    text-align: center;
+    padding: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .planos {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .cartao-planos {
+    margin-bottom: 40px;
+    width: 400px;
+  }
+  .btn-planos {
+    margin-top: 10px;
+    left: 160px;
+    padding: 12px;
+    width: 80px;
+  }
+
+  .btn-planos::after {
+    display: none;
+  }
+  .planos-bgk h2 {
+    text-align: center;
+    padding: 40px;
+  }
+}
+
+@media (max-width: 400px) {
+  .planos-residencial {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .cartao-planos {
+    margin-bottom: 40px;
+    width: 300px;
+  }
+  .btn-planos {
+    margin-top: 10px;
+    left: 120px;
+    padding: 12px;
+    width: 80px;
+  }
+
+  .planos-bgk h2 {
+    font-size: 1.6rem;
+  }
+}

@@ -1,0 +1,56 @@
+.depoimento-bgk {
+  background: linear-gradient(var(--cor-12) 700px, var(--cor-a3) 0px);
+}
+.depoimento blockquote {
+  padding-top: 80px;
+  padding-bottom: 120px;
+}
+
+.depoimento img {
+  object-fit: cover;
+  height: 500px;
+  width: 100%;
+}
+
+@media (max-width: 800px) {
+  .depoimento-bgk {
+    background: linear-gradient(var(--cor-12) 300px, var(--cor-a3) 0px);
+  }
+
+  .depoimento blockquote {
+    padding-top: 40px;
+    padding-bottom: 60px;
+    font-size: 1.5rem;
+  }
+
+  .depoimento img {
+    object-fit: cover;
+    height: 300px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .depoimento-bgk {
+    background: linear-gradient(var(--cor-12) 200px, var(--cor-a3) 0px);
+  }
+
+  .depoimento blockquote {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .depoimento img {
+    object-fit: cover;
+    height: 200px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  .depoimento-bgk {
+    background: linear-gradient(var(--cor-12) 300px, var(--cor-a3) 0px);
+  }
+}

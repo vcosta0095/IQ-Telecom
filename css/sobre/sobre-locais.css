@@ -1,0 +1,90 @@
+.sobre-locais-bgk {
+  background: var(--cor-9);
+  padding-bottom: 80px;
+}
+
+.sobre-locais-bgk h1 {
+  padding: 80px 0;
+}
+
+.sobre-locais-bgk h1::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: var(--cor-l1);
+  transition: 0.6s;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.sobre-locais-bgk h1:hover::before {
+  width: 40px;
+  background-color: var(--cor-a7);
+}
+
+.sobre-locais {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.sobre-locais-cartao-img img {
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  padding-bottom: 20px;
+}
+
+.sobre-locais-cartao {
+  box-sizing: border-box;
+  background: var(--cor-a7);
+  border-radius: 40px;
+}
+
+.sobre-locais-cartao-info {
+  padding-bottom: 20px;
+}
+
+.sobre-locais-cartao-conteudo {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.sobre-locais-cartao-info h2,
+.sobre-locais-cartao-info p {
+  padding-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.sobre-locais-cartao-info h2::before {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 8px;
+  background-color: var(--cor-l1);
+  margin-right: 8px;
+}
+
+.sobre-locais-cartao-horario p {
+  display: flex;
+  align-items: center;
+}
+
+.sobre-locais-cartao-horario p::before {
+  content: "";
+  background-image: url(../../img/horario.svg);
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  margin-right: 8px;
+}
+
+@media (max-width: 600px) {
+  .sobre-locais {
+    grid-template-columns: 1fr;
+  }
+  .sobre-locais-bgk h1 {
+    padding-left: 20px;
+    font-size: 1.5rem;
+  }
+}

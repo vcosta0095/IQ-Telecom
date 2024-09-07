@@ -1,0 +1,144 @@
+.orcamento-cabecalho-bgk {
+  background: linear-gradient(var(--cor-a3) 400px, var(--cor-1) 0px);
+}
+
+.orcamento-cabecalho-bgk h1 {
+  padding-top: 60px;
+  padding-bottom: 80px;
+}
+
+.orcamento-cabecalho-bgk h1::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: var(--cor-l1);
+  transition: 0.6s;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.orcamento-cabecalho-bgk h1:hover::before {
+  width: 40px;
+  background-color: var(--cor-a7);
+}
+
+.orcamento {
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+  padding-bottom: 120px;
+}
+
+.orcamento h3 {
+  text-transform: uppercase;
+}
+
+.orcamento-produto,
+.orcamento-dados {
+  padding: 60px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  background: var(--cor-a4);
+}
+
+.orcamento-produto-titulo {
+  padding: 16px 0;
+}
+
+.orcamento-conteudo h2 {
+  padding: 16px 0;
+}
+
+.orcamento-produto {
+  border-radius: 5px 0 0 5px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-content: start;
+}
+
+.orcamento-dados {
+  border-radius: 0 5px 5px 0;
+}
+
+.orcamento-produto label {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  font: 500 1rem/1.5 "Poppins", sans-serif;
+  color: var(--cor-12);
+  background-color: var(--cor-0);
+  color: var(--cor-a2);
+  padding: 12px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.orcamento-produto label::before {
+  content: "";
+  height: 12px;
+  width: 12px;
+  display: inline-block;
+  border-radius: 50%;
+  border: 1px solid var(--cor-9);
+  box-sizing: border-box;
+  margin-right: 8px;
+}
+
+.orcamento-produto label span {
+  display: none;
+}
+
+.orcamento-produto input:checked + label span {
+  display: inline-block;
+}
+
+.orcamento-produto input:checked + label::before {
+  border-color: var(--cor-10);
+  box-shadow: inset 0 0 0 3px var(--cor-0), inset 0 0 0 6px var(--cor-10);
+}
+.orcamento-produto > label {
+  grid-column: initial;
+}
+
+.orcamento-produto > * {
+  grid-column: 1/-1;
+}
+
+.orcamento-produto input:checked + label {
+  background-color: var(--cor-l1);
+  color: var(--cor-0);
+}
+
+.orcamento-produto input {
+  opacity: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.orcamento-conteudo {
+  display: none;
+}
+
+#residencial:checked ~ #orcamento-residencial,
+#empresarial:checked ~ #orcamento-empresarial {
+  display: grid;
+  gap: 20px;
+}
+
+@media (max-width: 800px) {
+  .orcamento {
+    grid-template-columns: 1fr;
+    border-radius: 0px;
+  }
+  .orcamento-dados {
+    border-radius: 0px;
+  }
+  .orcamento-produtos {
+    border-radius: 0px;
+  }
+}
+
+@media (max-width: 400px) {
+  .orcamento-produto {
+    grid-template-columns: 1fr;
+  }
+}

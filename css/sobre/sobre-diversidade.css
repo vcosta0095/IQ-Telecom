@@ -1,0 +1,27 @@
+.sobre-diversidade-bgk {
+  background: linear-gradient(var(--cor-a1) 300px, var(--cor-m1) 0);
+}
+
+.sobre-diversidade-info {
+  padding-top: 60px;
+}
+
+.sobre-diversidade-info h2 {
+  padding-bottom: 60px;
+  text-align: center;
+}
+
+.sobre-diversidade-img img {
+  object-fit: cover;
+}
+
+@media (max-width: 400px) {
+  .sobre-diversidade-bgk {
+    background: linear-gradient(var(--cor-a1) 200px, var(--cor-m1) 0);
+  }
+
+  .sobre-diversidade-info h2 {
+    font-size: 1rem;
+    padding-bottom: 30px;
+  }
+}

@@ -1,0 +1,128 @@
+.font-nav {
+  font: 400 1.25rem/1.44 "Poppins", sans-serif;
+}
+
+.font-title-intro {
+  font: 700 2.5rem/1.44 "Poppins", sans-serif;
+}
+
+.font-text-intro {
+  font: 400 1.125rem/1.33 "Poppins", sans-serif;
+}
+
+.font-title-iq {
+  font: 700 2.25rem/1.22 "Poppins", sans-serif;
+}
+
+/* Para texto introdução e titulo nas informações de suporte */
+.font-text-iq {
+  font: 400 1rem/1.5 "Roboto", sans-serif;
+}
+
+.font-title {
+  font: 700 2.5rem/1.5 "Poppins", sans-serif;
+}
+
+.font-title-servico {
+  font: 500 2.25rem/1.22 "Poppins", sans-serif;
+}
+
+/* para texto de serviços e planos */
+.font-text-info {
+  font: 600 1.125rem/1.33 "Roboto", sans-serif;
+}
+
+.font-text-depoimento {
+  font: 400 2.75rem/1.22 "Croissant one", sans-serif;
+}
+
+.font-title-footer {
+  font: 400 1.5rem/1.22 "Poppins", sans-serif;
+}
+
+.font-text-footer {
+  font: 400 1.125rem/1.77 "Poppins", sans-serif;
+}
+
+.font-title-planos {
+  font: 800 1.75rem/1.35 "Poppins", sans-serif;
+}
+
+.font-text-planos {
+  font: 600 0.825rem/1.44 "Poppins", sans-serif;
+}
+.font-text-sobre1 {
+  font: 600 1.5rem/1.35 "Roboto", sans-serif;
+}
+
+.font-text-sobre2 {
+  font: 400 2rem/1.25 "Roboto", sans-serif;
+}
+
+.font-text-depoimento-sobre {
+  font: 400 2rem/1.25 "Roboto", sans-serif;
+}
+
+.font-text-diversidade-sobre {
+  font: 400 1rem/1.66 "Roboto", sans-serif;
+}
+
+.font-text-feedback {
+  font: 600 1rem/1.66 "Roboto", sans-serif;
+}
+.font-title-feedback {
+  font: 400 1.5rem/1.66 "Poppins", sans-serif;
+}
+
+.font-title-sobre-mapa {
+  font: 600 2rem/1.25 "Poppins", sans-serif;
+}
+
+.font-text-sobre-mapa1 {
+  font: 500 1rem/2 "Roboto", sans-serif;
+}
+
+.font-text-sobre-mapa2 {
+  font: 800 0.875rem/1.42 "Poppins", sans-serif;
+}
+
+.font-subtitle {
+  font: 400 1.5rem/1.33 "Poppins", sans-serif;
+}
+
+.font-title-suporte-adc {
+  font: 600 1rem/1.33 "Poppins", sans-serif;
+}
+
+.font-title-suporte {
+  font: 500 1.25rem/1.4 "Roboto", sans-serif;
+}
+
+.font-text-suporte {
+  font: 500 1rem/1.25rem "Roboto", sans-serif;
+}
+
+.font-text-suporte-info {
+  font: 400 0.725rem/1.4 "Roboto", sans-serif;
+}
+
+.font-title-suporte-perguntas {
+  font: 600 1.125rem/1.33 "Poppins", sans-serif;
+}
+
+/* Para titulos em contato e em orçamento */
+.font-title-suporte-form-contato {
+  font: 600 0.75rem/2 "Poppins", sans-serif;
+}
+
+.font-botao {
+  font: 600 1.25rem/1.4 "Poppins", sans-serif;
+}
+
+.font-title-termos {
+  font: 600 1.5rem/1.33 "Poppins", sans-serif;
+}
+
+.font-text-termos {
+  font: 400 1.125rem/1.33 "Roboto", sans-serif;
+}
